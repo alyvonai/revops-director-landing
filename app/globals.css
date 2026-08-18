@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-accent: #de4b12;
+  --color-background: #ffffff;
+  --color-border: #d8d6d7;
+  --color-muted: #aea8a8;
+  --color-surface: #f6f7f9;
+  --color-rust: #815445;
+  --color-altsurface: #eeeeef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-ink antialiased;
+}
