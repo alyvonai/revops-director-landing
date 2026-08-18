@@ -166,6 +166,60 @@ export const departmentCatalog = [
   "Executive Ops",
 ];
 
+// Illustrative scenarios, not real named customers — Alyvon is early-stage and
+// does not yet have case studies to publish. Each entry is clearly labeled
+// "Illustrative scenario" in the UI. Do not add a real company name/logo here
+// without confirming it is a real, consented customer reference.
+export type CaseStudyScenario = {
+  archetype: string;
+  companyProfile: string;
+  challenge: string;
+  approach: string[];
+  outcome: string;
+};
+
+export const caseStudyScenarios: CaseStudyScenario[] = [
+  {
+    archetype: "Agency",
+    companyProfile: "Illustrative scenario — 35-person performance marketing agency, USA",
+    challenge:
+      "New client work kept stalling behind a single overloaded creative team, and hiring a fourth designer wasn't justified by the pipeline yet.",
+    approach: [
+      "Stood up the Marketing and Design departments to pick up campaign briefs directly from account leads",
+      "Connected Slack and Google Drive via MCP so deliverables landed where the team already worked",
+      "Kept a human approval gate on every asset before it reached a client",
+    ],
+    outcome:
+      "The agency could say yes to new retainer work without opening a new req, and account leads got first drafts back same-day instead of queuing behind the design backlog.",
+  },
+  {
+    archetype: "SaaS team",
+    companyProfile: "Illustrative scenario — 60-person B2B SaaS company, Series A",
+    challenge:
+      "A lean RevOps function was manually stitching together pipeline reporting from HubSpot and Google Sheets every week, leaving no time for process work.",
+    approach: [
+      "Deployed the RevOps Director to own recurring pipeline and forecast reporting",
+      "Connected HubSpot and Google Sheets via MCP integrations",
+      "Used Finance and Data & Analytics departments for ad hoc board-deck requests",
+    ],
+    outcome:
+      "The RevOps lead moved from producing reports to reviewing and acting on them, with recurring reporting running on a schedule instead of a Friday scramble.",
+  },
+  {
+    archetype: "Professional services firm",
+    companyProfile: "Illustrative scenario — 80-person consulting firm, USA",
+    challenge:
+      "Proposal and SOW turnaround was the firm's biggest sales-cycle bottleneck, bottlenecked on one overloaded ops generalist.",
+    approach: [
+      "Rolled out the Sales Development and Legal & Compliance departments for first-draft proposals and SOWs",
+      "Used Notion and Google Docs integrations so drafts landed in the firm's existing knowledge base",
+      "Kept partners in the loop with a human approval step before anything went to a prospect",
+    ],
+    outcome:
+      "First drafts moved from days to hours, and the ops generalist shifted from drafting documents to reviewing and closing them out.",
+  },
+];
+
 export const integrationCategories: { category: string; tools: string[] }[] = [
   {
     category: "CRM & Revenue",
