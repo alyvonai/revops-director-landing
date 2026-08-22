@@ -1,0 +1,9 @@
+{
+  "name": "revops-director-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static landing page scaffold for RevOps Director, Alyvon's AI-powered revenue operations specialist.",
+  "scripts": {
+    "dev": "npx serve . -l 3000"
+  }
+}
